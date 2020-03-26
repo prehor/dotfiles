@@ -2,3 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "gitignore"]
+	path = gitignore
+	url = https://github.com/github/gitignore

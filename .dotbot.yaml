@@ -1,11 +1,12 @@
 # https://github.com/anishathalye/dotbot
 
+- clean: ['~']
+
+# Platform unspecific files
 - defaults:
     link:
       create: true
       relink: true
-
-- clean: ['~']
 
 - link:
     # bash
@@ -14,3 +15,23 @@
     ~/.bash_prompt: bash/bash_prompt.sh
     ~/.bashrc: bash/bashrc.sh
     ~/.profile: bash/profile.sh
+    # git
+    ~/.gitconfig: git/gitconfig
+
+# Apple macOS specific files
+- defaults:
+    link:
+      if: '[ "$(uname)" = "Darwin" ]'
+- link:
+    # git
+    ~/.gitignore_global:
+      path: gitignore/Global/macOS.gitignore
+
+# Linux specific files
+- defaults:
+    link:
+      if: '[ "$(uname)" = "Linux" ]'
+- link:
+    # git
+    ~/.gitignore_global:
+      path: gitignore/Global/Linux.gitignore
