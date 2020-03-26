@@ -1,3 +1,16 @@
 # https://github.com/anishathalye/dotbot
 
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
+
+- link:
+    # bash
+    ~/.bash_aliases: bash/bash_aliases.sh
+    ~/.bash_profile: bash/bash_profile.sh
+    ~/.bash_prompt: bash/bash_prompt.sh
+    ~/.bashrc: bash/bashrc.sh
+    ~/.profile: bash/profile.sh
