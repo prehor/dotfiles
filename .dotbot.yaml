@@ -15,6 +15,8 @@
     ~/.bash_prompt: bash/bash_prompt.sh
     ~/.bashrc: bash/bashrc.sh
     ~/.profile: bash/profile.sh
+    # editorconfig
+    ~/.editorconfig: editorconfig/editorconfig
     # git
     ~/.gitconfig: git/gitconfig
 
