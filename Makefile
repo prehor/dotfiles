@@ -19,8 +19,9 @@ git-pull:
 .PHONY: git-update-submodules
 git-update-submodules:
 	@set -x; \
-	git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive; \
-	git submodule update --init --recursive "${DOTBOT_DIR}"
+	git submodule update --init --recursive; \
+	git submodule sync --quiet --recursive; \
+	git submodule foreach git pull origin master
 
 # Update dotfiles
 .PHONY: update
