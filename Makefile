@@ -1,4 +1,4 @@
-DOTBOT_CONFIG		?= dotbot.yaml
+DOTBOT_CONFIG		?= .dotbot.yaml
 DOTBOT_DIR		?= dotbot
 
 # Update git and dotfiles
