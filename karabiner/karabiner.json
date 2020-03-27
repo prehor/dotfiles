@@ -14,7 +14,58 @@
                     "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
                 },
-                "rules": []
+                "rules": [
+                    {
+                        "description": "Change command+non_us_backslash to command+keypad_plus",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "keypad_plus",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change command+option+non_us_backslash to command+option+keypad_plus",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "keypad_plus",
+                                        "modifiers": [
+                                            "command",
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
             },
             "devices": [],
             "fn_function_keys": [
