@@ -29,6 +29,8 @@
     # git
     ~/.gitignore_global:
       path: gitignore/Global/macOS.gitignore
+    # karabiner-elements
+    ~/.config/karabiner: karabiner
 
 # Linux specific dotfiles
 - defaults:
