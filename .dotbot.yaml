@@ -2,7 +2,7 @@
 
 - clean: ['~']
 
-# Platform unspecific files
+# Common dotfiles
 - defaults:
     link:
       create: true
@@ -20,19 +20,21 @@
     # git
     ~/.gitconfig: git/gitconfig
 
-# Apple macOS specific files
+# Apple macOS specific dotfiles
 - defaults:
     link:
       if: '[ "$(uname)" = "Darwin" ]'
+
 - link:
     # git
     ~/.gitignore_global:
       path: gitignore/Global/macOS.gitignore
 
-# Linux specific files
+# Linux specific dotfiles
 - defaults:
     link:
       if: '[ "$(uname)" = "Linux" ]'
+
 - link:
     # git
     ~/.gitignore_global:
