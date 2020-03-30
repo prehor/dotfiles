@@ -38,7 +38,8 @@
           "from": { "key_code": "1",  "modifiers": { "mandatory": [ "option" ] } },
           "to": [
             { "key_code": "keypad_9", "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_6", "modifiers":                [ "left_option" ] }
+            { "key_code": "keypad_6", "modifiers":                [ "left_option" ] },
+            { "key_code": "left_option", "halt": true }
           ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
@@ -136,7 +137,8 @@
           "from": { "key_code": "quote", "modifiers": { "mandatory": [ "option" ] } },
           "to": [
             { "key_code": "keypad_3",    "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_9",    "modifiers":                [ "left_option" ] }
+            { "key_code": "keypad_9",    "modifiers":                [ "left_option" ] },
+            { "key_code": "left_option", "halt": true }
           ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
@@ -146,7 +148,8 @@
           "from": { "key_code": "backslash", "modifiers": { "mandatory": [ "shift" ] } },
           "to": [
             { "key_code": "keypad_9",        "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_6",        "modifiers":                [ "left_option" ] }
+            { "key_code": "keypad_6",        "modifiers":                [ "left_option" ] },
+            { "key_code": "left_option", "halt": true }
           ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
@@ -186,7 +189,8 @@
             { "key_code": "keypad_0", "modifiers":                [ "left_option" ] },
             { "key_code": "keypad_1", "modifiers":                [ "left_option" ] },
             { "key_code": "keypad_6", "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_9", "modifiers":                [ "left_option" ] }
+            { "key_code": "keypad_9", "modifiers":                [ "left_option" ] },
+            { "key_code": "left_option", "halt": true }
           ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
@@ -197,7 +201,8 @@
           "to": [
             { "key_code": "keypad_1", "modifiers":                [ "left_option" ] },
             { "key_code": "keypad_6", "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_9", "modifiers":                [ "left_option" ] }
+            { "key_code": "keypad_9", "modifiers":                [ "left_option" ] },
+            { "key_code": "left_option", "halt": true }
           ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
         },
@@ -209,7 +214,8 @@
             { "key_code": "keypad_0", "modifiers":                [ "left_option" ] },
             { "key_code": "keypad_1", "modifiers":                [ "left_option" ] },
             { "key_code": "keypad_5", "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_3", "modifiers":                [ "left_option" ] }
+            { "key_code": "keypad_3", "modifiers":                [ "left_option" ] },
+            { "key_code": "left_option", "halt": true }
           ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
         }

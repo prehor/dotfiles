@@ -1768,6 +1768,10 @@
                                         "modifiers": [
                                             "left_option"
                                         ]
+                                    },
+                                    {
+                                        "halt": true,
+                                        "key_code": "left_option"
                                     }
                                 ],
                                 "type": "basic"
@@ -2146,6 +2150,10 @@
                                         "modifiers": [
                                             "left_option"
                                         ]
+                                    },
+                                    {
+                                        "halt": true,
+                                        "key_code": "left_option"
                                     }
                                 ],
                                 "type": "basic"
@@ -2180,6 +2188,10 @@
                                         "modifiers": [
                                             "left_option"
                                         ]
+                                    },
+                                    {
+                                        "halt": true,
+                                        "key_code": "left_option"
                                     }
                                 ],
                                 "type": "basic"
@@ -2334,6 +2346,10 @@
                                         "modifiers": [
                                             "left_option"
                                         ]
+                                    },
+                                    {
+                                        "halt": true,
+                                        "key_code": "left_option"
                                     }
                                 ],
                                 "type": "basic"
@@ -2375,6 +2391,10 @@
                                         "modifiers": [
                                             "left_option"
                                         ]
+                                    },
+                                    {
+                                        "halt": true,
+                                        "key_code": "left_option"
                                     }
                                 ],
                                 "type": "basic"
@@ -2422,6 +2442,10 @@
                                         "modifiers": [
                                             "left_option"
                                         ]
+                                    },
+                                    {
+                                        "halt": true,
+                                        "key_code": "left_option"
                                     }
                                 ],
                                 "type": "basic"
