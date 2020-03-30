@@ -199,9 +199,10 @@
           "type": "basic",
           "from": { "key_code": "r",  "modifiers": { "mandatory": [ "option", "shift" ] } },
           "to": [
+            { "key_code": "keypad_0", "modifiers":                [ "left_option" ] },
             { "key_code": "keypad_1", "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_6", "modifiers":                [ "left_option" ] },
-            { "key_code": "keypad_9", "modifiers":                [ "left_option" ] },
+            { "key_code": "keypad_7", "modifiers":                [ "left_option" ] },
+            { "key_code": "keypad_4", "modifiers":                [ "left_option" ] },
             { "key_code": "left_option", "halt": true }
           ],
           "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
