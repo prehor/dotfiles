@@ -1,0 +1,22 @@
+{
+  "title": "Command-+ on Czech (European/ISO) Keyboard",
+  "rules": [
+    {
+      "description": "Command-+ on Czech (European/ISO) Keyboard",
+      "manipulators": [
+        {
+          "description": "Command-+",
+          "type": "basic",
+          "from": { "key_code": "non_us_backslash", "modifiers": { "mandatory": [ "command" ] } },
+          "to": [ { "key_code": "keypad_plus", "modifiers": [ "command" ] } ]
+        },
+        {
+          "description": "Command-Option-+",
+          "type": "basic",
+          "from": { "key_code": "non_us_backslash", "modifiers": { "mandatory": [ "command", "option" ] } },
+          "to": [ { "key_code": "keypad_plus",      "modifiers": [ "command", "option" ] } ]
+        }
+      ]
+    }
+  ]
+}

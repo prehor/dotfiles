@@ -16,9 +16,10 @@
                 },
                 "rules": [
                     {
-                        "description": "Change command+non_us_backslash to command+keypad_plus",
+                        "description": "Command-+ on Czech (European/ISO) Keyboard",
                         "manipulators": [
                             {
+                                "description": "Command-+",
                                 "from": {
                                     "key_code": "non_us_backslash",
                                     "modifiers": {
@@ -36,13 +37,9 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change command+option+non_us_backslash to command+option+keypad_plus",
-                        "manipulators": [
+                            },
                             {
+                                "description": "Command-Option-+",
                                 "from": {
                                     "key_code": "non_us_backslash",
                                     "modifiers": {
