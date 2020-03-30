@@ -53,22 +53,22 @@ xterm|xterm-256color)
   LESS_TERMCAP_mb="${boldred}"
   export LESS_TERMCAP_mb
   # Enter double-bright mode
-  LESS_TERMCAP_md="${boldgreen}}"
+  LESS_TERMCAP_md="${boldgreen}"
   export LESS_TERMCAP_md
   # Enter standout mode
   LESS_TERMCAP_so="${blue}"
   export LESS_TERMCAP_so
   # Enter underline mode
-  LESS_TERMCAP_us="${boldcyan}}"
+  LESS_TERMCAP_us="${boldcyan}"
   export LESS_TERMCAP_us
   # Leave standout mode
   LESS_TERMCAP_se="${end}"
   export LESS_TERMCAP_se
   # Leave underline mode
-  LESS_TERMCAP_ue="${end}}"
+  LESS_TERMCAP_ue="${end}"
   export LESS_TERMCAP_ue
   # Turn off all appearance modes (mb, md, so, us)
-  LESS_TERMCAP_me="${end}}"
+  LESS_TERMCAP_me="${end}"
   export LESS_TERMCAP_me
 
   # Uset colors
