@@ -5,6 +5,20 @@
       "description": "Microsoft Remote Desktop - Windows Mappings",
       "manipulators": [
         {
+          "description": "Lazy left_command",
+          "type": "basic",
+          "from": { "key_code": "left_command" },
+          "to": [ { "key_code": "left_command", "lazy": true } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
+        {
+          "description": "Lazy right_command",
+          "type": "basic",
+          "from": { "key_code": "right_command" },
+          "to": [ { "key_code": "right_command", "lazy": true } ],
+          "conditions": [ { "type": "frontmost_application_if", "bundle_identifiers": [ "com\\.microsoft\\.rdc\\.macos" ] } ]
+        },
+        {
           "description": "Command-A",
           "type": "basic",
           "from": { "key_code": "a", "modifiers": { "mandatory": [ "command" ] } },
