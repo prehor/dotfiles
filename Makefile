@@ -21,7 +21,7 @@ git-update-submodules:
 	@set -x; \
 	git submodule update --init --recursive; \
 	git submodule sync --quiet --recursive; \
-	git submodule foreach git pull origin master
+	git submodule update --remote --merge
 
 # Update dotfiles
 .PHONY: update
