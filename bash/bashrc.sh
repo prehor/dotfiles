@@ -28,6 +28,8 @@ set input-meta on
 set meta-flag on
 set output-meta on
 
+LC_ALL="$LANG"
+
 # Colorize less
 case "$TERM" in
 xterm|xterm-256color)
