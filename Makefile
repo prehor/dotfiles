@@ -26,7 +26,7 @@ git-init-submodules:
 .PHONY: git-update-submodules
 git-update-submodules: git-init-submodules
 	@set -x; \
-	git submodule update --remote --merge --recursive
+	git submodule update --checkout --remote --recursive
 
 # Update dotfiles
 .PHONY: update
