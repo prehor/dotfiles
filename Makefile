@@ -15,11 +15,16 @@ git-pull:
 	@set -x; \
 	git pull
 
+# Init git submodules
+.PHONY: git-init-submodules
+git-init-submodules:
+	@set -x; \
+	git submodule update --init --recursive
+
 # Update git submodules
 .PHONY: git-update-submodules
-git-update-submodules:
+git-update-submodules: git-init-submodules
 	@set -x; \
-	git submodule update --init --recursive; \
 	git submodule sync --quiet --recursive; \
 	git submodule update --remote --merge --recursive
 
