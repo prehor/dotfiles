@@ -3,7 +3,7 @@ DOTBOT_DIR		?= dotbot
 
 # Update git and dotfiles
 .PHONY: all
-all: git-update update
+all: update
 
 # Update git
 .PHONY: git-update
@@ -19,18 +19,18 @@ git-pull:
 .PHONY: git-init-submodules
 git-init-submodules:
 	@set -x; \
-	git submodule update --init --recursive
+	git submodule update --init --recursive; \
+	git submodule sync --quiet --recursive
 
 # Update git submodules
 .PHONY: git-update-submodules
 git-update-submodules: git-init-submodules
 	@set -x; \
-	git submodule sync --quiet --recursive; \
 	git submodule update --remote --merge --recursive
 
 # Update dotfiles
 .PHONY: update
-update: $(DOTBOT_CONFIG)
+update: git-init-submodules $(DOTBOT_CONFIG)
 	@set -x; \
 	$(DOTBOT_DIR)/bin/dotbot -d $(CURDIR) -c $(DOTBOT_CONFIG)
 
