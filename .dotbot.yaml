@@ -19,6 +19,9 @@
     ~/.editorconfig: editorconfig/editorconfig
     # git
     ~/.gitconfig: git/gitconfig
+    # zsh
+    ~/.zprofile: zsh/zprofile
+    ~/.zshrc: zsh/zshrc
 
 # Apple macOS specific dotfiles
 - defaults:
